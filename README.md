@@ -13,7 +13,7 @@ alias gitconfig='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 2. Склонируй репозиторий в папку:
 ```bash
-mkdir ~/.dotfiles & git clone --bare https://github.com/mrover41/ArchConfigs.git ~/.dotfiles
+mkdir ~/.dotfiles && git clone --bare https://github.com/mrover41/ArchConfigs.git ~/.dotfiles
 ```
 
 3. Разверни репозиторий
