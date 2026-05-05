@@ -6,14 +6,14 @@
 
 ## Как развернуть у себя
 
-1. Добавь алиас в свой конфиг шелла (.zshrc или .bashrc):
+1. Добавь алиас в конфиг шелла (.zshrc или .bashrc):
 ```bash
-alias gitconfig='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias gitconfig='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 ```
 
 2. Склонируй репозиторий в папку:
 ```bash
-mkdir ~/.dotfiles && git clone --bare https://github.com/mrover41/ArchConfigs.git $HOME/.dotfiles
+mkdir ~/.dotfiles & git clone --bare https://github.com/mrover41/ArchConfigs.git ~/.dotfiles
 ```
 
 3. Разверни репозиторий
@@ -21,8 +21,8 @@ mkdir ~/.dotfiles && git clone --bare https://github.com/mrover41/ArchConfigs.gi
 gitconfig checkout
 ```
 
-### 1. Алиас
-Добавь эту строку в свой `.bashrc` или `.zshrc`:
+### 1. Алиас (Еще раз естли у кого-то дименция)
+Добавь эту строку в `.bashrc` или `.zshrc`:
 ```bash
 alias gitconfig='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 ```
