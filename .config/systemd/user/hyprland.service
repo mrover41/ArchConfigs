@@ -1,0 +1,10 @@
+[Unit]
+Description=Hyprland Wayland session
+After=graphical.target
+
+[Service]
+Environment=XDG_RUNTIME_DIR=%t
+ExecStart=/usr/bin/start-hyprland
+
+[Install]
+WantedBy=default.target

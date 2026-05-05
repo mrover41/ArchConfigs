@@ -1,0 +1,18 @@
+(defvar open_panel false)
+(defvar bat "0%")
+(defvar wifi "null")
+(defvar time "null")
+
+(defwindow bar
+  :monitor 0
+  :geometry (geometry :x "0px" :y "5%" :anchor "top right")
+  :stacking "fg"
+  (box :halign "end"
+    (revealer :transition "slideleft" 
+              :reveal open_panel
+              :duration "500ms"
+      (box :class "panel"
+        (label :text "Charge: ${bat}
+WiFi: ${wifi}
+${time}")
+		))))

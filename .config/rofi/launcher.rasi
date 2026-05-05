@@ -1,0 +1,79 @@
+configuration {
+    modi: "drun";
+    show-icons: true;
+    display-drun: " ";
+    drun-display-format: "{name}";
+    font: "JetBrainsMono Nerd Font 10";
+}
+
+* {
+    bg: #11111b;
+    fg: #cdd6f4;
+    accent: #cba6f7;
+    selected: #313244;
+}
+
+window {
+    width: 600px;
+    border: 2px;
+    border-color: @accent;
+    border-radius: 15px;
+    background-color: @bg;
+    padding: 20px;
+}
+
+mainbox {
+    background-color: transparent;
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    margin: 0 0 15px 0;
+    children: [ prompt, entry ];
+    background-color: @selected;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+prompt {
+    background-color: transparent;
+    text-color: @accent;
+}
+
+entry {
+    background-color: transparent;
+    text-color: @fg;
+    placeholder: "Search apps...";
+}
+
+listview {
+    columns: 2;
+    lines: 8;
+    spacing: 5px;
+    fixed-height: true;
+    background-color: transparent;
+}
+
+element {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: transparent;
+    text-color: @fg;
+    orientation: horizontal;
+	background-color: transparent;
+}
+
+element-icon {
+    size: 24px;
+    margin: 0 10px 0 0;
+}
+
+element selected {
+    background-color: @accent;
+    text-color: @bg;
+}
+
+element-text, element-icon {
+    background-color: transparent;
+    text-color:       inherit;
+}

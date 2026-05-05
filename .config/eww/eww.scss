@@ -1,0 +1,22 @@
+* {
+  all: unset;
+}
+
+.panel {
+  background-color: #1e1e2e; 
+  color: #cdd6f4;
+  
+  border: 2px solid #ed7700; 
+  border-radius: 20px 0px 0px 20px;
+
+  border: 2px solid #333333;
+  border-right: none;
+
+  padding: 15px 25px;
+  
+  font-family: "JetBrains Mono Nerd Font", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+
+  /*box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);*/
+}
