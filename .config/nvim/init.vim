@@ -25,16 +25,4 @@ let g:gruvbox_contrast_dark = 'hard'
 
 nnoremap <M-`> :NERDTreeToggle<CR>
 
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
 
-inoremap <Up> <Nop>
-inoremap <Down> <Nop>
-inoremap <Left> <Nop>
-inoremap <Right> <Nop>
-
-nnoremap <A-w> <C-w>
-nnoremap <A-d> <C-d>
-nnoremap <A-u> <C-u>
