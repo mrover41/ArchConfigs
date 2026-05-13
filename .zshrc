@@ -113,7 +113,7 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-alias hyprconfig='nvim ~/.config/hypr/hyprland.conf'
+alias hyprconfig='cd ~/.config/hypr/ && nvim hyprland.conf'
 alias makepkg='grep -R "sudo" PKGBUILD && echo "WARNING!: SUDO IN PKGBUILD" || true; makepkg'
 #alias ls='ls -a'
 
@@ -124,3 +124,9 @@ export HISTSIZE=20000
 export SAVEHIST=20000
 
 alias gitconfig='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+
+command_not_found_handler() {
+    echo "zsh: don't use a virus: '$1'"
+    return 127
+}
